@@ -4,11 +4,99 @@
 
 <meta charset="UTF-8">
 
-<title>My IT 161 Page</title>
+<title>Cryptid Watch 2020!</title>
+
+<link rel="stylesheet" href="styles.css">
 
 <body>
-  <p>This page will one day be a testament to my web dev prowess,<br>
-  <p>if the fates allow.</p>
+  <div id="intro">
+
+    <h2 id="intro_text">What's that around the corner..?<br>What's that peeking in the window..?<br>
+      Could it be... a cryptid?!</h2>
+
+    <img src="mothman.png" alt="Hey, it's mothman!">
+
+  </div>
+
+  <h1>Cryptids!</h1>
+
+  <div>
+    <div class="box">Perhaps you're familiar with some of the more well-known cryptids:
+      <ul>
+        <li>Bigfoot</li>
+        <li>The Loch Ness Monster</li>
+        <li>The Jersey Devil</li>
+      </ul>
+    </div>
+    <div class="box">Maybe you've run into one of the rarer ones:
+      <ul>
+        <li>Champ</li>
+        <li>The Bunyip</li>
+        <li>The Skunk Ape</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="psa">
+    If we don't keep track of them, future generations won't be able to<br>
+    wonder if they really exist!
+  </div>
+
+  <p style="font-size: 150%">Please fill out the following form to report your encounter:</p>
+
+  <div id="form">
+    <form action="https://wp.zybooks.com/form-viewer.php" target="_blank"
+      method="GET">
+      <div>
+        <label for="sighter_name">Name:</label>
+        <input type="text" id="sighter_name" name="sighter_name">
+      </div>
+      <div>
+        <label for="cryptid_name">Name of Cryptid (if known):</label>
+        <input type="text" id="cryptid_name" name="cryptid_name">
+      </div>
+      <div>
+        <label for="date">Date of Sighting:</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div>
+        <label for="location">Location of Sighting:</label>
+        <input type="text" id="location" name="location">
+      </div>
+      <div>
+        <fieldset>
+          <legend>Please select the type of cryptid you encountered:</legend>
+          <div>
+            <input type="radio" name="type" id="terrestrial" value="Terrestrial">
+            <label for="terrestrial">Terrestrial</label>
+          </div>
+          <div>
+            <input type="radio" name="type" id="aquatic" value="Aquatic">
+            <label for="aquatic">Aquatic</label>
+          </div>
+          <div>
+            <input type="radio" name="type" id="avian" value="Avian">
+            <label for="avian">Avian</label>
+          </div>
+          <div>
+            <input type="radio" name="type" id="other" value="Other">
+            <label for="other">Other</label>
+          </div>
+          </fieldset>
+        <div>
+          <label for="description">Description of Sighting:</label>
+          <textarea id="description" name="description" placeholder="Please provide a detailed description of the encounter, including the identity of the cryptid (if known), any distinguishing features, and what the nature of your interaction was."
+          cols=50 rows=10></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+
+    <img src="loch_ness_m.png" alt="That's a scary cryptid!">
+
+
 </body>
 
 </html>

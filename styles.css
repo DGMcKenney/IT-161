@@ -1,0 +1,100 @@
+:root {
+  background: linear-gradient(to bottom right, red, black);
+  font-family: monospace;
+}
+
+#intro {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#intro_text {
+  opacity: 0;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-name: fadeInText;
+  animation-fill-mode: forwards;
+  font-size: 500%;
+}
+
+#intro img {
+  opacity: 0;
+  animation-duration: 0s;
+  animation-delay: 3s;
+  animation-name: fadeInImg;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeInImg {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+h1 {
+  font-size: 500%;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+
+input[type=submit] {
+   width: 200px;
+   background-color: black;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=text], select {
+   width: 350px;
+   padding: 10px;
+   margin: 6px 0;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+}
+
+fieldset {
+
+   width: 500px;
+   padding: 10px;
+   margin: 6px 0;
+   border: 1px solid #aaa;
+   border-radius: 4px;
+   text-align: center;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  font-size: large;
+}
+
+#psa {
+  font-size: large;
+  float: left;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 200%;
+}
+
+form {
+  vertical-align: top;
+}
+
+img {
+  mix-blend-mode: multiply;
+}
