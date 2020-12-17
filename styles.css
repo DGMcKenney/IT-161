@@ -98,3 +98,7 @@ form {
 img {
   mix-blend-mode: multiply;
 }
+
+footer a {
+  color: yellow;
+}
